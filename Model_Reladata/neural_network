@@ -1,0 +1,167 @@
+// Neural Network
+digraph {
+	subgraph cluster_input {
+		node [color=white style=filled]
+		color=lightgray style=filled
+		input_0 [label=x0]
+		input_1 [label=x1]
+		input_2 [label=x2]
+		input_3 [label=x3]
+		input_4 [label=x4]
+		label="Input Layer"
+	}
+	input_0 -> hidden1_0
+	input_0 -> hidden1_1
+	input_0 -> hidden1_2
+	input_0 -> hidden1_3
+	input_0 -> hidden1_4
+	input_0 -> hidden1_5
+	input_1 -> hidden1_0
+	input_1 -> hidden1_1
+	input_1 -> hidden1_2
+	input_1 -> hidden1_3
+	input_1 -> hidden1_4
+	input_1 -> hidden1_5
+	input_2 -> hidden1_0
+	input_2 -> hidden1_1
+	input_2 -> hidden1_2
+	input_2 -> hidden1_3
+	input_2 -> hidden1_4
+	input_2 -> hidden1_5
+	input_3 -> hidden1_0
+	input_3 -> hidden1_1
+	input_3 -> hidden1_2
+	input_3 -> hidden1_3
+	input_3 -> hidden1_4
+	input_3 -> hidden1_5
+	input_4 -> hidden1_0
+	input_4 -> hidden1_1
+	input_4 -> hidden1_2
+	input_4 -> hidden1_3
+	input_4 -> hidden1_4
+	input_4 -> hidden1_5
+	subgraph cluster_hidden1 {
+		node [color=white style=filled]
+		color=lightblue style=filled
+		hidden1_0 [label=h1_0]
+		hidden1_1 [label=h1_1]
+		hidden1_2 [label=h1_2]
+		hidden1_3 [label=h1_3]
+		hidden1_4 [label=h1_4]
+		hidden1_5 [label=h1_5]
+		label="Hidden Layer 1"
+	}
+	hidden1_0 -> hidden2_0
+	hidden1_0 -> hidden2_1
+	hidden1_0 -> hidden2_2
+	hidden1_0 -> hidden2_3
+	hidden1_0 -> hidden2_4
+	hidden1_0 -> hidden2_5
+	hidden1_1 -> hidden2_0
+	hidden1_1 -> hidden2_1
+	hidden1_1 -> hidden2_2
+	hidden1_1 -> hidden2_3
+	hidden1_1 -> hidden2_4
+	hidden1_1 -> hidden2_5
+	hidden1_2 -> hidden2_0
+	hidden1_2 -> hidden2_1
+	hidden1_2 -> hidden2_2
+	hidden1_2 -> hidden2_3
+	hidden1_2 -> hidden2_4
+	hidden1_2 -> hidden2_5
+	hidden1_3 -> hidden2_0
+	hidden1_3 -> hidden2_1
+	hidden1_3 -> hidden2_2
+	hidden1_3 -> hidden2_3
+	hidden1_3 -> hidden2_4
+	hidden1_3 -> hidden2_5
+	hidden1_4 -> hidden2_0
+	hidden1_4 -> hidden2_1
+	hidden1_4 -> hidden2_2
+	hidden1_4 -> hidden2_3
+	hidden1_4 -> hidden2_4
+	hidden1_4 -> hidden2_5
+	hidden1_5 -> hidden2_0
+	hidden1_5 -> hidden2_1
+	hidden1_5 -> hidden2_2
+	hidden1_5 -> hidden2_3
+	hidden1_5 -> hidden2_4
+	hidden1_5 -> hidden2_5
+	subgraph cluster_hidden2 {
+		node [color=white style=filled]
+		color=lightgreen style=filled
+		hidden2_0 [label=h2_0]
+		hidden2_1 [label=h2_1]
+		hidden2_2 [label=h2_2]
+		hidden2_3 [label=h2_3]
+		hidden2_4 [label=h2_4]
+		hidden2_5 [label=h2_5]
+		label="Hidden Layer 2"
+	}
+	hidden2_0 -> hidden3_0
+	hidden2_0 -> hidden3_1
+	hidden2_0 -> hidden3_2
+	hidden2_0 -> hidden3_3
+	hidden2_0 -> hidden3_4
+	hidden2_0 -> hidden3_5
+	hidden2_1 -> hidden3_0
+	hidden2_1 -> hidden3_1
+	hidden2_1 -> hidden3_2
+	hidden2_1 -> hidden3_3
+	hidden2_1 -> hidden3_4
+	hidden2_1 -> hidden3_5
+	hidden2_2 -> hidden3_0
+	hidden2_2 -> hidden3_1
+	hidden2_2 -> hidden3_2
+	hidden2_2 -> hidden3_3
+	hidden2_2 -> hidden3_4
+	hidden2_2 -> hidden3_5
+	hidden2_3 -> hidden3_0
+	hidden2_3 -> hidden3_1
+	hidden2_3 -> hidden3_2
+	hidden2_3 -> hidden3_3
+	hidden2_3 -> hidden3_4
+	hidden2_3 -> hidden3_5
+	hidden2_4 -> hidden3_0
+	hidden2_4 -> hidden3_1
+	hidden2_4 -> hidden3_2
+	hidden2_4 -> hidden3_3
+	hidden2_4 -> hidden3_4
+	hidden2_4 -> hidden3_5
+	hidden2_5 -> hidden3_0
+	hidden2_5 -> hidden3_1
+	hidden2_5 -> hidden3_2
+	hidden2_5 -> hidden3_3
+	hidden2_5 -> hidden3_4
+	hidden2_5 -> hidden3_5
+	subgraph cluster_hidden3 {
+		node [color=white style=filled]
+		color=lightyellow style=filled
+		hidden3_0 [label=h3_0]
+		hidden3_1 [label=h3_1]
+		hidden3_2 [label=h3_2]
+		hidden3_3 [label=h3_3]
+		hidden3_4 [label=h3_4]
+		hidden3_5 [label=h3_5]
+		label="Hidden Layer 3"
+	}
+	hidden3_0 -> output_0
+	hidden3_0 -> output_1
+	hidden3_1 -> output_0
+	hidden3_1 -> output_1
+	hidden3_2 -> output_0
+	hidden3_2 -> output_1
+	hidden3_3 -> output_0
+	hidden3_3 -> output_1
+	hidden3_4 -> output_0
+	hidden3_4 -> output_1
+	hidden3_5 -> output_0
+	hidden3_5 -> output_1
+	subgraph cluster_output {
+		node [color=white style=filled]
+		color=pink style=filled
+		output_0 [label=o0]
+		output_1 [label=o1]
+		label="Output Layer"
+	}
+}
